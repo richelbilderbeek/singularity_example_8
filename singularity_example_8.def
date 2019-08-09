@@ -3,7 +3,7 @@ From: ubuntu:18.10
 
 %runscript
 
-    /Zork/Zork
+    cd /Zork; ./Zork
 
 %post
 
