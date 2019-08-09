@@ -1,0 +1,29 @@
+BootStrap: library
+From: ubuntu:18.10
+
+%runscript
+
+    /Zork/Zork
+
+%post
+
+    apt-get update
+    apt-get install -qq git qt5-qmake qt5-default g++ make
+    git clone https://github.com/richelbilderbeek/Zork.git --depth=1
+    cd Zork
+    qmake Zork.pro
+    make --silent
+
+%labels
+
+    AUTHOR Richel J.C. Bilderbeek
+
+    NAME singularity_example_8
+ 
+    DESCRIPTION Singularity example 8: Singularity 3.2.1, Ubuntu 18.10 (cosmic), Zork
+
+    USAGE simply run the container
+
+    URL https://github.com/richelbilderbeek/singularity_example_8
+
+    VERSION 1.0

@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo singularity build singularity_example_6.sif singularity_example_6.def
+sudo singularity build singularity_example_8.sif singularity_example_8.def
