@@ -1,2 +1,4 @@
 *.simg
 pavel-demin-*
+*.sif
+gmon.out
